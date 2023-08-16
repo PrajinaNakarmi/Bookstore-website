@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title> BOOKTOWN</title>
+	<link rel="stylesheet" href="..\css\style.css"><!--linking css--->
+	<script src= "../js/readmore.js"></script>
+</head>
+<body>
+	<div class="container">
+	 <div class="navbar">
+	 	<div class="logo">
+	 	<img src="..\images\logo\Artboard 1.png" width="100px">	<!--logo-->
+	 </div>
+	 <nav>
+	      <ul>
+	      	<li><a href="../index.html">Home</a></li>
+	      	<li><a class="active" href="product.html">Product</a></li> <!--linking product--->
+	      	<li><a href="Blog.html">Blog</a></li>
+	      	<li><a href="research.html">Research</a></li>
+	      	<li><a href="findus.html">Find us</a></li>
+	      </ul>
+	</nav>
+</div>
+</div>
+<div class="prodetails">
+	<div class="section1">
+		<div class="singleimage">
+			<img src="..\images\featured product\11.jpg" width="332px" height=" 366px"id="expandedImg" onclick="myFunction(this);">  <!---big image-->
+			<div class="small-img-group">
+				<div class="small-img-col" >
+					<img src="..\images\featured product\11.jpg" width="75px" height="100px" alt=""onclick="myFunction(this);" ><!---small image-->
+				</div>
+						<div class="small-img-col" >
+					<img src="..\images\sproduct\pro2.jpg" width="75px" height="100px" alt=""onclick="myFunction(this);"><!---small image-->
+				</div>
+					<div class="small-img-col" >
+					<img src="..\images\sproduct\pro3.jpg" width="75px" height="100px"alt="" onclick="myFunction(this);"><!---small image-->
+				</div>
+					<div class="small-img-col" >
+					<img src="..\images\sproduct\pro4.jpg" width="75px" height="100px"alt=""onclick="myFunction(this);"><!---small image-->
+				</div>
+				</div>
+			</div>
+		</div>
+
+  <!-- Image text -->
+  <div id="imgtext"></div>
+<!------------>
+<div class="single-details">
+	<h2> History is All you left me</h2>
+	<h4> $23.00</h4>
+<input type="number" value="1"> <!--amount button--->
+<button class="btn"> Add to Cart</button> <!---Adding button--->
+<p>Synopsis</p>
+<span>When Griffin’s first love and ex-boyfriend, Theo, dies in a drowning accident, his universe implodes. Even though Theo had moved to California for college and started seeing Jackson, Griffin never doubted Theo would come back to him when the time was right. But now, the future he’s been imagining for himself has gone far off course.
+	<br>
+	<br>
+To make things worse, the only person who truly understands his heartache is Jackson. But no matter how much they open up to each other, Griffin’s downward spiral continues. He’s losing himself in his obsessive compulsions and destructive choices, and the secrets he’s been keeping are tearing him apart.
+<br>
+<br>
+If Griffin is ever to rebuild his future, he must first confront his history, every last heartbreaking piece in the puzzle of his life.</span>
+
+</div>
+</div>
+<script> function myFunction(imgs) {
+  // Get the expanded image
+  var expandImg = document.getElementById("expandedImg");
+  // Get the image text
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  // Use the value of the alt attribute of the clickable image as text inside the expanded image
+  imgText.innerHTML = imgs.alt;
+  // Show the container element (hidden with CSS)
+  expandImg.parentElement.style.display = "block";
+}</script>
+<!------------Featured products------------>
+<h2 class="title">Featured Products</h2>
+	<div class="smallcontainer">
+	<div class="row2">
+	<div class="col5">
+<img src="..\images\featured product\13.jpg" width="85px" height="300px">
+	<h4>Subtle Art of Not giving F*ck</h4>
+	<P>$20.00</P>
+</div>
+	<div class="col5">
+<img src="..\images\top ppicks\toppick2.jpg"width="85px" height="300px">
+<h4>This Might Hurt</h4>
+<P>$25.00</P>
+</div>
+	<div class="col5">
+<img src="..\images\featured product\product4.jpg" width="85px" height="300px"><br>
+	<h4>The Alchemist</h4>
+<P>$15.00</P>
+</div>
+	<div class="col5">
+<img src="..\images\top ppicks\toppick4.jpg"width="85px" height="300px">
+<h4>Delilah Green Doesnot Care</h4>
+<P>$20.00</P>
+</div>
+<div class="col5">
+<img src="..\images\featured product\9.jpg"width="85px" height="300px">
+<h4>Why we Broke up</h4>
+<P>$30.00</P>
+</div>
+	<div class="col5">
+<img src="..\images\Best sellers\bestseller2.jpg"width="85px" height="300px">
+<h4>The Paris Apartment </h4>
+<P>$26.00</P>
+</div>
+</div>
+</div>
+<!----Our Favourites--->
+<div class="smallcontainer">
+<h2 class="title">Our Favourites</h2>
+	<div class="row2">
+		<table> <!----table--->
+			<tr>
+				<th>
+	<div class="col-4">
+<img src="..\images\New arrivals\nw.jpg"width="85px" height="300px">
+<h4>Reminders of Him</h4>
+<P>$20.00</P>
+ </div>
+   </th>
+       <th>
+	<div class="col-4">
+<img src="..\images\New arrivals\nw1.jpg"width="85px" height="300px">
+<h4>Sharp Object</h4>
+<P>$25.00</P>
+    </div>
+        </th>
+            <th>
+	<div class="col-4">
+<img src="..\images\New arrivals\nw2.jpg"width="85px" height="300px">
+<h4>Still blue</h4>
+<P>$15.00</P>
+     </div>
+        </th>
+            <th>
+	<div class="col-4">
+<img src="..\images\New arrivals\nw3.jpg"width="85px" height="300px">
+<h4>Blue Fish</h4>
+<P>$20.00</P>
+      </div>
+         </th>
+            <th>
+<div class="col-4">
+<img src="..\images\New arrivals\nw5.jpg"width="85px" height="300px">
+<h4>Can love Happen Twice</h4>
+<P>$30.00</P>
+</div>
+</th>
+<th>
+	<div class="col-4">
+<img src="..\images\New arrivals\Dark.png"width="85px" height="300px">
+<h4>Dark </h4>
+<P>$20.00</P>
+</div>
+</th>
+</tr>
+</table>
+</div>
+</div>
+	<!-------------Footer--------->
+	<div class="sectionp1">
+	<div class="col">
+		<h4>Contact</h4>
+		<p><strong>Phone:</strong> 9818685999/ +01 5555 765</p>
+		<p><strong>Hours:</strong> 10:00 - 19:00, Sun - Fri </p>
+		<div class="follow">
+			<h4> Follow us</h4>
+			<div class="icon">
+				<img src="..\images\social media\fb.png" width="20px" height="30px">
+				<img src="..\images\social media\insta.png"width="20px" height="30px">
+				<img src="..\images\social media\twitter.png"width="20px" height="30px">
+				<img src="..\images\social media\pinn.png"width="20px" height="30px">
+			</div>
+		</div>
+	</div>
+	<div class="col">
+		<h4> About</h4>
+		<a href="#">About us</a>
+		<a href="#">Delivery Info</a>
+		<a href="#">Privacy Policy</a>
+		<a href="#">Terms and Condition</a>
+		<a href="#">Contact Us</a>
+	</div>
+	<div class="col">
+		<h4> My Account</h4>
+		<a href="#">Sign in</a>
+		<a href="#">View Cart</a>
+		<a href="#">My Wishlist</a>
+		<a href="#">Track My Order</a>
+		<a href="#">Help</a>
+	</div>
+	<div class="col install">
+		<h4>Install App</h4>
+		<p>From App Store or Google Play Store</p>
+		<div class="row">
+			<img src="..\images\findus\playstore.png" width="95px" height="45px" alt="">
+			<img src="..\images\findus\appstore.png " width="95px" height="42px" alt="">
+		</div>
+		<img class="logo" src="..\images\logo\Artboard 1.png" width="80px" height="90px" alt="">
+	</div>
+	</div>
+</div>
+	</body>
+	</html>
+	<!----Closing html-->
